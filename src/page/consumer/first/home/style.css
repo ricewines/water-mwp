@@ -1,0 +1,5 @@
+.rounded-corner-div {
+    border: 0 solid #fff; /* 边框 */
+    padding: 0; /* 内边距 */
+    border-radius: 20px; /* 圆角的半径 */
+}

@@ -1,0 +1,9 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- 定义灰色背景矩形 -->
+    <rect width="100%" height="100%" fill="#D3D3D3"/>
+
+    <!-- 定义文本元素 -->
+    <text x="50%" y="50%" text-anchor="middle" dy=".3em" font-family="Arial" font-size="48" fill="#FFFFFF">
+        商品无图
+    </text>
+</svg>
