@@ -1,7 +1,7 @@
 {
   "name": "water-mwp",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,15 +10,15 @@
   },
   "dependencies": {
     "@vant/touch-emulator": "^1.4.0",
-    "vant": "^4.9.9",
+    "vant": "^4.9.10",
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@types/node": "^22.9.3",
-    "@vitejs/plugin-vue": "^5.2.0",
-    "@vitejs/plugin-vue-jsx": "^4.1.0",
-    "typescript": "^5.7.2",
-    "vite": "^5.4.11",
+    "@types/node": "^22.10.2",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitejs/plugin-vue-jsx": "^4.1.1",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.1",
     "vue-tsc": "^2.1.10"
   }
 }
