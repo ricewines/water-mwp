@@ -10,10 +10,8 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, "index.html"),
-                demo: resolve(__dirname, "page/demo/index.html"),
                 demo1: resolve(__dirname, "page/demo/demo1/index.html"),
                 demo2: resolve(__dirname, "page/demo/demo2/index.html"),
-                "consumer": resolve(__dirname, "page/consumer/index.html"),
             }
         }
     },
