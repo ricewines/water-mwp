@@ -1,9 +1,10 @@
 import {defineComponent, Ref, ref} from "vue";
-import { Tabbar, TabbarItem} from "vant";
+import {Tabbar, TabbarItem} from "vant";
 import Classification from "./classification/Index.tsx";
 import Cart from "./cart/Index.tsx";
 import Setting from "./setting/Index.tsx";
 import Home from "./home/Index.tsx"
+import router from "../../../route/Router.tsx";
 
 const WaterTabbar = defineComponent({
     props: {
@@ -21,8 +22,9 @@ const WaterTabbar = defineComponent({
                 <Tabbar modelValue={active.value} onUpdate:modelValue={(value) => {
                     active.value = value;
                     emit("update", active.value);
-                }} onChange={(index) => {
-                    console.log(`标签${index}`)
+                }} onChange={(value) => {
+                    console.log(`标签:${value}`)
+                    return router.push({name: value})
                 }}>
                     <TabbarItem icon="home-o" name="首页">首页</TabbarItem>
                     <TabbarItem icon="search" name="分类">分类</TabbarItem>

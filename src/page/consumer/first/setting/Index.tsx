@@ -1,6 +1,6 @@
 import {defineComponent} from "vue";
 import {Cell as VanCell, Row as VanRow, Col as VanCol, NavBar, Icon} from "vant";
-import router from "../../Router.tsx";
+import router from "../../../../route/Router.tsx";
 
 export default defineComponent({
     setup() {
@@ -14,7 +14,7 @@ export default defineComponent({
                             }}
                         </NavBar>
                         <VanCell is-link title="关于" onClick={() => {
-                            return router.push({name: 'about'})
+                            return router.push({name: '关于'})
                         }}/>
                         <VanCell is-link title="模版" onClick={() => {
                             return router.push({name: 'demo'})
