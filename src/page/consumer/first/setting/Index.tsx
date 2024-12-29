@@ -1,7 +1,5 @@
 import {defineComponent} from "vue";
 import {Cell as VanCell, Row as VanRow, Col as VanCol, NavBar, Icon} from "vant";
-import {settingPage} from "../../../../store/SettingStatus.tsx";
-import {consumerPage} from "../../../../store/PageStatus.tsx";
 import router from "../../Router.tsx";
 
 export default defineComponent({

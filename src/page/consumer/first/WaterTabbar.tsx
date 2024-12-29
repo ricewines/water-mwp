@@ -1,5 +1,5 @@
 import {defineComponent, Ref, ref} from "vue";
-import {showToast, Tabbar, TabbarItem} from "vant";
+import { Tabbar, TabbarItem} from "vant";
 import Classification from "./classification/Index.tsx";
 import Cart from "./cart/Index.tsx";
 import Setting from "./setting/Index.tsx";
