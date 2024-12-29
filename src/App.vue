@@ -1,10 +1,11 @@
 <script lang="ts" setup>
 import HelloWorld from './components/HelloWorld.vue'
 import {onMounted} from "vue";
+import consumerPageUrl from '../page/consumer/index.html?url';
 
 onMounted(() => {
   setTimeout(() => {
-    location.href = '/page/consumer/'
+    location.href = consumerPageUrl;
   }, 3000)
 })
 </script>

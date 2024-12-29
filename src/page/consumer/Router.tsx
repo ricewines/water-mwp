@@ -13,22 +13,21 @@ import Demo from "./demo/Demo.tsx"
 
 const routes: RouteRecordRaw[] = [
     {
-        path: '/page/consumer/index.html', component: Root
-    },
-    {
-        path: '/page/consumer/', redirect: '/page/consumer/index.html', children: [
+        path: '/page/consumer', redirect: '/page/consumer/index.html',
+        children: [
             {path: 'home', component: HomePage},
+            {path: 'cart', component: CartPage},
+            {path: 'classification', component: ClassificationPage},
+            {
+                path: 'setting', component: SettingPage,
+                children: []
+            },
+            {path: 'about', component: About, name: 'about'},
+            {path: 'demo', component: Demo, name: 'demo'}
         ]
-    },
-    {path: '/home', component: HomePage},
-    {path: '/cart', component: CartPage},
-    {path: '/classification', component: ClassificationPage},
-    {path: '/setting', component: SettingPage},
-    {
-        path: '/about', component: About,
-        meta: {transition: 'slide-left'},
-    },
-    {path: '/demo', component: Demo}
+    }, {
+        path: '/page/consumer/index.html', component: Root
+    }
 ]
 
 const router = createRouter({

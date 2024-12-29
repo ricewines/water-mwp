@@ -16,12 +16,10 @@ export default defineComponent({
                             }}
                         </NavBar>
                         <VanCell is-link title="关于" onClick={() => {
-                            settingPage().switchPage('关于');
-                            consumerPage().switchPage('设置');
-                            return router.push({path: '/about'})
+                            return router.push({name: 'about'})
                         }}/>
                         <VanCell is-link title="模版" onClick={() => {
-                            return router.push({path: '/demo'})
+                            return router.push({name: 'demo'})
                         }}/>
                     </VanCol>
                 </VanRow>
