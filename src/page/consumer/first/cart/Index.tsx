@@ -1,11 +1,11 @@
-import { defineComponent } from "vue";
+import {defineComponent} from "vue";
 
 export default defineComponent({
-  setup() {
-    return () => (
-      <>
-        <h2>购物车</h2>
-      </>
-    );
-  }
+    setup() {
+        return () => (
+            <>
+                <h2>购物车</h2>
+            </>
+        );
+    }
 });

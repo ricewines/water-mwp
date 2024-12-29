@@ -2,14 +2,15 @@
 import "vant/lib/index.css";
 // 2. 引入自定义组件样式
 import "../../style.css";
-import { createApp } from "vue";
-import App from "./App.tsx";
+import {createApp} from "vue";
+import {createPinia} from 'pinia'
+import router from "./Router.tsx";
 
-
+let pinia = createPinia();
 createApp({
-  render: () => (
-    <>
-      <App></App>
-    </>
-  )
-}).mount("#app");
+    render: () => (
+        <>
+            <router-view/>
+        </>
+    )
+}).use(pinia).use(router).mount("#app");

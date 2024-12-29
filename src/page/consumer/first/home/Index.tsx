@@ -2,7 +2,7 @@ import { defineComponent, FunctionalComponent, ref, VNode } from "vue";
 import { Search as VanSearch, showToast, Col as VanCol, Row as VanRow, Sticky as VanSticky } from "vant";
 // 引入模块后自动生效
 import "@vant/touch-emulator";
-import "./style.css";
+import "./home-style.css";
 
 const WaterSearch = defineComponent({
   setup() {
