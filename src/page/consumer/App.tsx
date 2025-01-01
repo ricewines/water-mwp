@@ -11,7 +11,10 @@ link.rel = 'icon';
 link.href = linkRef;
 document.getElementsByTagName('head')[0].appendChild(link);
 
-
+let search = location.search;
+if (search) {
+    console.info(`页面参数:${search}`)
+}
 const Root = defineComponent({
     setup() {  // 注意：这里的 JSX 实际上会被 Babel 插件转换为 h(...) 调用
         let content = consumerPage().getContent();
