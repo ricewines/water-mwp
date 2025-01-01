@@ -45,7 +45,7 @@ const routes: RouteRecordRaw[] = [
 ]
 
 const router = createRouter({
-    history: createWebHistory("./"),
+    history: createWebHistory("/water-mwp"),
     routes,
 })
 export default router;
