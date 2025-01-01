@@ -1,5 +1,5 @@
 import {
-    createRouter, createWebHistory, RouteRecordRaw
+    createRouter, createWebHashHistory, RouteRecordRaw
 } from 'vue-router'
 
 import {Root} from '../page/consumer/App.tsx'
@@ -45,7 +45,7 @@ const routes: RouteRecordRaw[] = [
 ]
 
 const router = createRouter({
-    history: createWebHistory("/water-mwp"),
+    history: createWebHashHistory(),
     routes,
 })
 export default router;
