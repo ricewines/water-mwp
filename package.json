@@ -1,7 +1,7 @@
 {
   "name": "water-mwp",
   "private": true,
-  "version": "0.0.12",
+  "version": "0.0.13",
   "type": "module",
   "author": {
     "name": "ricewines org.",
@@ -19,12 +19,12 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@types/node": "^22.10.3",
+    "@types/node": "^22.10.5",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vitejs/plugin-vue-jsx": "^4.1.1",
-    "typescript": "~5.6.2",
-    "vite": "^6.0.6",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7",
     "vue-router": "^4.5.0",
-    "vue-tsc": "^2.1.10"
+    "vue-tsc": "^2.2.0"
   }
 }
